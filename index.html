@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Fontawesome CDN-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/index.css">
+    <title>WhatsApp</title>
+  </head>
+  <body>
+      <div class="loading">
+          <img src="image/whatsapp.png" alt="">
+          <div>
+            <p>from </p>
+            <p>FACEBOOK</p>
+          </div>
+      </div>
+      <div class="whatsapp">
+      <div class="whole-body">
+      <div class="w-header">
+          <div class="sub-header">
+            <div>
+                <span>WhatsApp</span>
+            </div>
+            <div>
+                <div>
+                    <i class="fas fa-search"></i>
+                </div>
+                <div class="drop-show">
+                    <i class="fas fa-ellipsis-v"></i>
+                    <div class="w-drpodown">
+                        <div onclick="errorMsg('Nnew group function will coming soon...')">New Group</div>
+                        <div onclick="errorMsg('new broadcast function will coming soon...')">New broadcast</div>
+                        <div onclick="errorMsg('whatsApp web function will coming soon...')"> WhatsApp Web</div>
+                        <div onclick="errorMsg('starred message function will coming soon...')"> Starred message</div>
+                        <div onclick="errorMsg('payment function will coming soon...')"> Payments</div>
+                        <div onclick="errorMsg('setting function will coming soon...')">Settings</div>
+                    </div>
+                </div>
+            </div>
+          </div>
+      </div>
+      
+      <div class="sub-header-sticky">
+        <div>
+            <i class="fas fa-camera"></i>
+        </div>
+        <div>
+            <div class="chats" onclick="ShowHomechat()">
+                <span>CHATS</span>
+                <div class="header-straw1"></div>
+            </div>
+            <div class="status" onclick="ShowStatus()">
+                <span>STATUS</span>
+                <div class="header-straw2"></div>
+            </div>
+            <div class="calls" onclick="ShowCalls()">
+                <span>CALLS</span>
+                <div class="header-straw3"></div>
+            </div>
+        </div>
+    </div>
+
+        <!-- W-home-chat Body -->
+    <div class="w-chat">
+    </div>
+        <!-- fixed new chat icon  -->
+      <div class="fixed-new-chat">
+        <img src="/image/chat.svg" alt="chat" class="chat-icon">
+      </div>
+    
+      <!-- W-Stroies Body -->
+    <div class="w-stories">
+        <div>
+            <div>
+                <img src="image/fr.jpg" alt="">
+                <i class="fas fa-plus-circle  stories-body"></i>
+            </div>
+            <div class="chat-fr">
+                <span>My status</span>
+                <span>Tap to add status update </span>
+            </div>
+        </div>
+        <p class="recent-text">Recent update</p>
+
+        <!-- <div class="stories">
+            <div>
+                <img src="image/fr.jpg" alt="">
+                <i class="fas fa-plus-circle"></i>
+            </div>
+            <div class="chat-fr">
+                <span>Lohia Khanna</span>
+                <span>Today, 10:23 </span>
+            </div>
+        </div>
+        <div class="stories">
+            <div>
+                <img src="image/fr.jpg" alt="">
+                <i class="fas fa-plus-circle"></i>
+            </div>
+            <div class="chat-fr">
+                <span>Arun Kapoor</span>
+                <span>Today, 19:27 </span>
+            </div>
+        </div> -->
+    </div>
+    <!-- fixed bottom icons -->
+        <div class="fixed-status-icon1">
+            <i class="fas fa-camera"></i>
+            <i class="fas fa-pen"></i>
+        </div>
+
+        
+        <!-- W-Calls --> 
+      <div class="w-calls">
+        <!-- <div>
+            <div>
+                <img src="image/fr.jpg" alt="">
+            </div>
+            <div class="chat-fr">
+                <span>Arun Kashyap</span>
+                <span> <i class="fas fa-long-arrow-alt-up"></i> <span> (6) Today, 19:07</span></span>
+            </div>
+            <div class="call-icon">
+                <i class="fas fa-phone"></i>
+            </div>
+        </div> -->
+      </div>
+        <!-- fixed calls bottom icon   -->
+      <div class="fixed-status-icon2">
+        <i class="fas fa-phone"></i>
+        <i class="fas fa-video"></i>
+      </div>
+      </div>
+
+      <!-- w-chat-system -->
+      <div class="chat-page">
+        <!-- W-Chat-Body -->
+    <div class="w-chat-body">
+        <div class="chat-header">
+            <div class="header-left">
+                <i class="fas fa-arrow-left" onclick="backHomechat()"></i>
+                <img src="image/Robot.jpg" alt="">
+                <span>Robot 0.1<br><span class="onlineText">Typing...</span></span>
+            </div>
+            <div class="header-right">
+                <i class="fas fa-video" onclick="nonDevelopError('video function does not working yet')"></i>
+                <i class="fas fa-phone" onclick="nonDevelopError('call function does not working yet')"></i>
+                <div class="chat-dropdown-show">
+                    <i class="fas fa-ellipsis-v"></i>
+                    <div class="chat-dropdown">
+                        <div>View Contact</div>
+                        <div>Media, links and docs</div>
+                        <div> Search</div>
+                        <div> Mute Notification</div>
+                        <div onclick="wallpaperTheme2()"> Wallpaper</div>
+                        <div class="more-menu"> <span>More</span> <i class="fas fa-caret-right"></i>
+                            <div class="more-dropdown">
+                                <div>Report</div>
+                                <div>Block</div>
+                                <div>Clear chat</div>
+                                <div>Ex-port chat</div>
+                                <div>Add Shortcut</div>
+                                <div>Community</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="chat-bottom">
+            <div>
+                <textarea placeholder="Type a message" oninput="changeIcon()"></textarea>
+            </div>
+            <div>
+                <i class="fas fa-microphone" onclick="nonDevelopError('mic not working yet')"></i>
+                <i class="fas fa-paper-plane" onclick="responseMessage()"></i>
+            </div>
+        </div>
+    </div>
+    <!-- type message icons -->
+    <div class="type-inner-icon">
+        <i class="fas fa-smile" onclick="nonDevelopError('Emoji not working yet, You can use your keyword emoji')"></i>
+        <div>
+            <i class="fas fa-paperclip" onclick="nonDevelopError('attachment is under processing...<')"></i>
+            <i class="fas fa-camera" onclick="nonDevelopError('Camera not working yet')"></i>
+        </div>
+    </div>
+    <!-- Message Content -->
+    <div class="message-header">
+        <!-- <div class="msg-right">
+            <span> ohh Nice to Meet you! <span><span>15:08</span> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 15" width="16" height="15"><path fill="blue" d="M10.91 3.316l-.478-.372a.365.365 0 0 0-.51.063L4.566 9.879a.32.32 0 0 1-.484.033L1.891 7.769a.366.366 0 0 0-.515.006l-.423.433a.364.364 0 0 0 .006.514l3.258 3.185c.143.14.361.125.484-.033l6.272-8.048a.365.365 0 0 0-.063-.51z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 15" width="16" height="15"><path fill="blue" d="M10.91 3.316l-.478-.372a.365.365 0 0 0-.51.063L4.566 9.879a.32.32 0 0 1-.484.033L1.891 7.769a.366.366 0 0 0-.515.006l-.423.433a.364.364 0 0 0 .006.514l3.258 3.185c.143.14.361.125.484-.033l6.272-8.048a.365.365 0 0 0-.063-.51z"></path></svg></span></span>
+        </div> -->
+        <span id="chatBottom"></span>
+    </div>
+</div><!-- End Chat Page -->
+
+    <!-- Wallpaper Theme Page-->
+    <div class="wallpaper-theme">
+        <div class="wallpaper-header">
+            <i class="fas fa-arrow-left" onclick="chatHome()"></i>
+            <span>Custom Wallpaper</span>
+        </div>
+        <div>
+            <div>
+                <img src="https://dl.dropbox.com/s/qoa0pulm1eywiy4/light%20yellow.jpeg" alt="" onclick="themeBright()">
+                <img src="https://dl.dropbox.com/s/nnzxthjp4kb40fa/theme-black.jpeg" alt="">
+            </div>
+            <div class="gallary-text">
+                <span>Bright</span>
+                <span>Dark</span>
+            </div>
+            <div>
+                <!-- <div class="wallpaperColor"><label for="imageColor"><img src="https://dl.dropbox.com/s/fixvwq62hsw0svo/color.jpg"></label></div> -->
+                <input type="color"  value="#C8FF00" oninput="SolidColor(),confirmAlert()">
+                <img src="https://tidbits.com/uploads/2019/05/black-background-costume-dark-mode-1800x0-c-default.jpg" alt="">
+            </div>
+            <div class="gallary-text1">
+                <span>Solid Color</span>
+                <span>My Photos</span>
+            </div>
+        </div>
+        <div class="wallpaper-theme-footer">
+            <i class="far fa-image" onclick="DefaultWallpaper()"> <span>Default Wallpaper</span></i><br>
+            <i class="fas fa-trash" onclick="RemoveWallpaper()"><span>Remove custom wallpaper</span></i>
+        </div>
+    </div>
+    <!-- Wallpaper Theme View Page-->
+     <div class="theme-view">
+        <div class="theme-header">
+            <i class="fas fa-arrow-left" onclick="backtoWallpaperTheme()"></i>
+            <span>Bright</span>
+        </div>
+        <div>
+            <!-- via javascript added images theme -->
+        </div>
+    </div>
+    <!-- message icon -->
+    <span class="confirm-alert">Wallpaper-Changed</span>
+    </div>
+      <script src="js/index.js"></script>
+  </body>
+</html>

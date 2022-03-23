@@ -1,6 +1,6 @@
 # WHATSAPP CLONE 🥇
 > I have design a whatsapp clone:
-## <a href="https://dontknew.github.io/whatsappClone/" target='blank'> checkout Demo </a>
+## <a href="https://dontknew.github.io/whatsapp/" target='blank'> checkout Demo </a>
 <hr>
 
 ## Project Features :
